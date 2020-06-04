@@ -2,11 +2,11 @@
 
 {% block title %}{{page_title}}{% endblock %}
 
-{% block favicon %}<link id="favicon" rel="shortcut icon" type="image/x-icon" href="{{static_url("base/images/favicon-file.ico") }}">{% endblock %}
+{% block favicon %}<link id="favicon" rel="shortcut icon" type="image/x-icon" href="/service/jnotebook/static/base/images/favicon-file.ico">{% endblock %}
 
 {% block stylesheet %}
-<link rel="stylesheet" href="{{ static_url('components/codemirror/lib/codemirror.css') }}">
-<link rel="stylesheet" href="{{ static_url('components/codemirror/addon/dialog/dialog.css') }}">
+<link rel="stylesheet" href="/service/jnotebook/static/components/codemirror/lib/codemirror.css">
+<link rel="stylesheet" href="/service/jnotebook/static/components/codemirror/addon/dialog/dialog.css">
 {{super()}}
 {% endblock %}
 
