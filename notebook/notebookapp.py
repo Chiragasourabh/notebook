@@ -259,7 +259,7 @@ class NotebookWebApplication(web.Application):
             static_path=jupyter_app.static_file_path,
             static_custom_path=jupyter_app.static_custom_path,
             static_handler_class = FileFindHandler,
-            static_url_prefix = url_path_join(base_url,'/static/'),
+            static_url_prefix = url_path_join(base_url,'/service/jnotebook/static/'),
             static_handler_args = {
                 # don't cache custom.js
                 'no_cache_paths': [url_path_join(base_url, 'static', 'custom')],
